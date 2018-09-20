@@ -1,0 +1,21 @@
+5
+Cau Truc Du Lieu
+Nguyen Duc Dan
+2017
+200
+Co So Du Lieu
+Tran Quang Nam
+2016
+100
+Tin Dai Cuong
+Duc Thang
+2018
+230
+Kinh Te
+Nguyen Van A
+2016
+180
+Lap trinh huong doi tuong
+Nguyen Duc Dan
+2010
+300

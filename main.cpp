@@ -34,7 +34,7 @@ int main()
 			case 5:
 				SuaSach(l);
 			case 6:
-				
+				XuatHTML(l);
 				break;
 			case 0:
 				break;

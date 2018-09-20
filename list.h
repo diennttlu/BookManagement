@@ -53,7 +53,7 @@ public:
 		}
 		cout<<endl;
 	};
-	void GetAnItem(int pos)
+	T GetAnItem(int pos)
 	{
 		if(pos-1 == 0)
 			return head ->data;
@@ -158,7 +158,7 @@ public:
 	};
 	int Len() const
 	{
-		int len;
+		int len = 0;
 		Node<T> *p = head;
 		while(p != 0)
 		{
@@ -213,22 +213,23 @@ public:
 
 	void SaveFile()
 	{
+		/*
 		char fileName[100];
 		cout<<"Nhap ten file chua du lieu: ";
 		cin.ignore();
-		cin.getline(fileName,100);
+		cin.getline(fileName,100);*/
 
 		ofstream fout;
-		fout.open(fileName,ios::out|ios::app);
+		fout.open("data.txt",ios::out|ios::app);
 		Node<T> *p = head;
-		/*
+		
 		int k = 1;
 		while(p != 0)
 		{
 			k++;
 			p=p->next;
 		}
-		fout<<k<<endl;*/
+		fout<<k<<endl;
 		while(p != 0)
 		{
 			fout<<p->data;
@@ -237,24 +238,7 @@ public:
 		fout.close();
 	};
 
-	void OpenFile()
-	{
-		char fileName[100];
-		cout<<"Nhap ten file chua du lieu: ";
-		cin.ignore();
-		cin.getline(fileName,100);
-
-		ifstream fin(fileName);
-		Node<T> *p = head;
-		while (!fin.eof())
-		{
-			T value;
-			fin>>value;
-			PushBack(value);
-		}
-		fin.close();
-	};
-
+	
 
 }; 
 #endif
