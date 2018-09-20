@@ -133,14 +133,10 @@ public:
 	};
 	void Change(T value, int pos) // chen vao vi tri pos, roi xoa pos cu; 
 	{
-		Node<T> *n = new Node<T>;
-		n->data = value;
 		Node<T> *p = head;
 		for(int i = 0;i<pos-1;i++)
 			p=p->next;
-		n->next = p->next;
-		p->next = n;
-		DeleteAtPos(pos);
+		p->data = value;
 	};
 	
 	void Insert(T value, int pos)
