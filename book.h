@@ -164,7 +164,7 @@ void XuatHTML(List<Book> l)
 	fout<<"					<th>Tac gia</th>\n";
 	fout<<"					<th>Nam XB</th>\n";
 	fout<<"					<th>So trang</th>\n";
-	fout<<"				</tr>>\n";
+	fout<<"				</tr>\n";
 	for(int i = 1;i<=k;i++)
 	{
 		Book a = l.GetAnItem(i);
